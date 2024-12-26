@@ -58,9 +58,10 @@ if st.button("Predict"):
         
         
 st.markdown(
-    "<footer style='position: fixed; bottom: 30px; right: 10px; font-size:15px; color: black; "
+    "<footer style='position: fixed; bottom: 50px; right: 10px; font-size:15px; color: black; "
     "background-color: #FFFF00; padding: 8px 15px; border-radius: 10px; "
     "text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);'>"
     "Created by Supritam Mukherjee</footer>",
     unsafe_allow_html=True,
 )
+
