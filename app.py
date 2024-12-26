@@ -3,8 +3,11 @@ import pickle
 import string
 import nltk
 from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
 
+nltk.download('punkt')
+nltk.download('stopwords')
+
+from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()
 
 tfidf = pickle.load(open('tfidf_vectorizer.pkl','rb'))
