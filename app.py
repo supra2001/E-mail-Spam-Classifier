@@ -13,7 +13,8 @@ ps = PorterStemmer()
 tfidf = pickle.load(open('tfidf_vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
-st.markdown("<h1 style='color:yellow; text-align:center;'>Email Spam Classifier</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='color:yellow; text-align:center;'>Email Spam Classifier</h1>", unsafe_allow_html=True)
+st.title('Email Spam Classifier')
 
 st.sidebar.title("About")
 st.sidebar.info("This app classifies E-mail or SMS messages as Spam or Not Spam")
@@ -59,7 +60,7 @@ if st.button("Predict"):
         
 st.markdown(
     "<footer style='position: fixed; bottom: 50px; right: 10px; font-size:15px; color: black; "
-    "background-color: #FFFF00; padding: 8px 15px; border-radius: 10px; "
+    "background-color:rgb(232, 232, 6); padding: 8px 15px; border-radius: 10px; "
     "text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);'>"
     "Created by Supritam Mukherjee</footer>",
     unsafe_allow_html=True,
